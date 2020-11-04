@@ -23,12 +23,13 @@ public class MyListUtil {
 						
 						min= l.get(j);
 						index = j;
+						l.set(index, l.get(i));
+
+						l.set(i, min);
 					}
 					
 				}
-				l.set(index, l.get(i));
-
-				l.set(i, min);
+				
 				
 				
 			}
@@ -46,12 +47,14 @@ public class MyListUtil {
 						
 						max= l.get(j);
 						index = j;
+						
+						l.set(index, l.get(i));
+
+						l.set(i, max);
 					}
 					
 				}
-				l.set(index, l.get(i));
-
-				l.set(i, max);
+				
 				
 				
 			}
