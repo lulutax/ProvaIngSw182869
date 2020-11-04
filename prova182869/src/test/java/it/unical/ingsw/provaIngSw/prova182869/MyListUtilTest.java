@@ -23,6 +23,9 @@ public class MyListUtilTest {
 	@Test 
 	public void sortArrayWork() {
     	ArrayList l = new ArrayList(Arrays.asList(2,3,5,1,4,19,1,19,13));
+		
+    	
+    	assertEquals(new ArrayList<Integer> (Arrays.asList(1,1,2,3,4,5,13,19,19)),m.sortArray(l, true));
 
 		assertEquals(new ArrayList<Integer> (Arrays.asList(19,19,13,5,4,3,2,1,1)),m.sortArray(l, false));
 		
